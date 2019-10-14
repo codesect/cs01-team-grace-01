@@ -61,3 +61,4 @@ The build is minified and the filenames include the hashes. Your app is ready to
 > Add a list of contributors
 
 - [Zsolt Meszaros](https://github.com/zsoltime)
+- [Muhammad Bilal](https://github.com/bilalbutt044)
