@@ -6,7 +6,7 @@ import { ApolloProvider } from 'react-apollo';
 import SampleGraphqlCall from './SampleGraphqlCall';
 
 const client = new ApolloClient({
-  uri: '/.netlify/functions/graphql',
+  uri: '/.netlify/functions/lambda',
 });
 
 function App() {

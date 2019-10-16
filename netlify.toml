@@ -1,6 +1,6 @@
 [build]
   # the command you run to build this file
-  command = "yarn build"
+  command = "npm run build"
   # netlify-lambda builds to this folder AND Netlify reads
   # functions from here
   functions = "built-lambda"
