@@ -7,8 +7,8 @@
 **On the homepage:**
 
 - [ ] As a site visitor, I want to see a search box where I can type a phone number, so I can quickly find other user's ratings.
-- [x] As a site visitor, on the first visit I want to see a message about cookie usage, so I can be informed about privacy issues.
-- [x] As a site visitor, on subsequent visits, I don't want to see the message about cookie usage.
+- [ ] As a site visitor, on the first visit I want to see a message about cookie usage, so I can be informed about privacy issues.
+- [ ] As a site visitor, on subsequent visits, I don't want to see the message about cookie usage.
 - [ ] As a site visitor, I want to see the latest 10 user submitted messages.
 
 **On the phone number details page:**
@@ -62,15 +62,27 @@ Launches the test runner in the interactive watch mode.
 
 Starts a development server and runs Cypress tests.
 
+### `npm run cy:open`
+
+Opens Cypress desktop GUI.
+
 ### `npm test`
 
 Runs unit tests, starts a development server, and runs e2e tests.
 
-### `npm run build`
+### `npm run build:app`
 
 Builds the app for production to the `build` folder. It correctly bundles React in production mode and optimizes the build for the best performance.
 
 The build is minified and the filenames include the hashes. Your app is ready to be deployed!
+
+### `npm run build:lambda`
+
+`netlify-lambda` takes a source folder (`/server`) and outputs it to a built folder (`/built-lambda`). It runs a single build of the functions in the folder.
+
+### `npm run build`
+
+Builds the app and lambda functions for production.
 
 ## Contributors
 
