@@ -2,6 +2,17 @@
   "name": "cs01-team-grace-01",
   "version": "0.1.0",
   "private": true,
+  "scripts": {
+    "build": "run-p build:**",
+    "build:app": "react-scripts build",
+    "build:lambda": "netlify-lambda build server --config webpack.functions.js",
+    "lint": "eslint server src",
+    "start:lambda": "netlify-lambda serve server",
+    "start:lambda:dev": "cross-env NODE_ENV=development netlify-lambda serve server",
+    "start:react": "react-scripts start",
+    "start": "run-p start:lambda:dev start:react",
+    "test": "react-scripts test"
+  },
   "dependencies": {
     "@reach/router": "^1.2.1",
     "apollo-boost": "^0.4.4",
@@ -19,16 +30,8 @@
     "styled-components": "^4.4.0",
     "webpack-node-externals": "^1.7.2"
   },
-  "scripts": {
-    "build": "run-p build:**",
-    "build:app": "react-scripts build",
-    "build:lambda": "netlify-lambda build server --config webpack.functions.js",
-    "lint": "eslint server src",
-    "start:lambda": "netlify-lambda serve server",
-    "start:lambda:dev": "NODE_ENV=development netlify-lambda serve server",
-    "start:react": "react-scripts start",
-    "start": "run-p start:lambda:dev start:react",
-    "test": "react-scripts test"
+  "devDependencies": {
+    "cross-env": "^6.0.3"
   },
   "eslintConfig": {
     "extends": "react-app"
