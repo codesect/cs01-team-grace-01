@@ -7,8 +7,8 @@
 **On the homepage:**
 
 - [ ] As a site visitor, I want to see a search box where I can type a phone number, so I can quickly find other user's ratings.
-- [ ] As a site visitor, on the first visit I want to see a message about cookie usage, so I can be informed about privacy issues.
-- [ ] As a site visitor, on subsequent visits, I don't want to see the message about cookie usage.
+- [x] As a site visitor, on the first visit I want to see a message about cookie usage, so I can be informed about privacy issues.
+- [x] As a site visitor, on subsequent visits, I don't want to see the message about cookie usage.
 - [ ] As a site visitor, I want to see the latest 10 user submitted messages.
 
 **On the phone number details page:**
@@ -40,15 +40,31 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 In the project directory, you can run:
 
-### `npm start`
+### `npm start:react`
 
 Runs the app in the development mode. You can open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 The page will reload if you make edits. You will also see any lint errors in the console.
 
-### `npm run test`
+### `npm start:lambda`
+
+Starts the lambda server
+
+### `npm run lint`
+
+Lints your code using ESLint.
+
+### `npm run test:unit`
 
 Launches the test runner in the interactive watch mode.
+
+### `npm run test:e2e`
+
+Starts a development server and runs Cypress tests.
+
+### `npm test`
+
+Runs unit tests, starts a development server, and runs e2e tests.
 
 ### `npm run build`
 
