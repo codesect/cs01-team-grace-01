@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 import { Wrapper } from '../components/GlobalStyles';
+import { SearchBox } from '../components/SearchBox';
 
 const Hero = styled.div`
   align-items: center;
@@ -17,6 +18,7 @@ const Home = () => {
       <Hero>
         <Wrapper>
           <h1>Home Page</h1>
+          <SearchBox onSubmit={console.log} />
         </Wrapper>
       </Hero>
     </main>
