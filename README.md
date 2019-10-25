@@ -40,21 +40,49 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 In the project directory, you can run:
 
-### `npm start`
+### `npm start:react`
 
 Runs the app in the development mode. You can open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 The page will reload if you make edits. You will also see any lint errors in the console.
 
-### `npm run test`
+### `npm start:lambda`
+
+Starts the lambda server
+
+### `npm run lint`
+
+Lints your code using ESLint.
+
+### `npm run test:unit`
 
 Launches the test runner in the interactive watch mode.
 
-### `npm run build`
+### `npm run test:e2e`
+
+Starts a development server and runs Cypress tests.
+
+### `npm run cy:open`
+
+Opens Cypress desktop GUI.
+
+### `npm test`
+
+Runs unit tests, starts a development server, and runs e2e tests.
+
+### `npm run build:app`
 
 Builds the app for production to the `build` folder. It correctly bundles React in production mode and optimizes the build for the best performance.
 
 The build is minified and the filenames include the hashes. Your app is ready to be deployed!
+
+### `npm run build:lambda`
+
+`netlify-lambda` takes a source folder (`/server`) and outputs it to a built folder (`/built-lambda`). It runs a single build of the functions in the folder.
+
+### `npm run build`
+
+Builds the app and lambda functions for production.
 
 ## Contributors
 

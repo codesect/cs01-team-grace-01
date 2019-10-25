@@ -6,12 +6,17 @@
     "build": "run-p build:**",
     "build:app": "react-scripts build",
     "build:lambda": "netlify-lambda build server --config webpack.functions.js",
+    "cy:open": "cypress open",
+    "cy:run": "cypress run",
+    "cy:verify": "cypress verify",
     "lint": "eslint server src",
     "start:lambda": "netlify-lambda serve server",
     "start:lambda:dev": "cross-env NODE_ENV=development netlify-lambda serve server",
     "start:react": "react-scripts start",
     "start": "run-p start:lambda:dev start:react",
-    "test": "react-scripts test"
+    "test:e2e": "cross-env BROWSER=none start-server-and-test start http://localhost:3000 cy:run",
+    "test:unit": "react-scripts test",
+    "test": "cross-env CI=true run-s test:unit test:e2e"
   },
   "dependencies": {
     "@reach/router": "^1.2.1",
@@ -31,10 +36,28 @@
     "webpack-node-externals": "^1.7.2"
   },
   "devDependencies": {
-    "cross-env": "^6.0.3"
+    "cross-env": "^6.0.3",
+    "cypress": "^3.5.0",
+    "enzyme": "^3.10.0",
+    "enzyme-adapter-react-16": "^1.15.1",
+    "enzyme-to-json": "^3.4.3",
+    "eslint-plugin-cypress": "^2.7.0",
+    "jest-styled-components": "^6.3.3",
+    "start-server-and-test": "^1.10.6"
   },
   "eslintConfig": {
-    "extends": "react-app"
+    "env": {
+      "cypress/globals": true
+    },
+    "extends": "react-app",
+    "plugins": [
+      "eslint-plugin-cypress"
+    ]
+  },
+  "jest": {
+    "snapshotSerializers": [
+      "enzyme-to-json/serializer"
+    ]
   },
   "browserslist": {
     "production": [

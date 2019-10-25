@@ -1,0 +1,50 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<CookieConsent /> matches snapshot 1`] = `
+<styled.div>
+  <Styled(styled.div)>
+    <styled.p>
+      By browsing this site you accept cookies used to improve and personalise our services. Read our privacy policy for more about what we do with your data, and how to manage cookies.
+    </styled.p>
+    <styled.button
+      onClick={[Function]}
+      type="button"
+    >
+      Accept and Close
+      <svg
+        height="16"
+        viewBox="0 0 360 360"
+        width="16"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <line
+          stroke="currentColor"
+          strokeLinecap="round"
+          strokeWidth="16"
+          x1="95.1665"
+          x2="264.872"
+          y1="264.853"
+          y2="95.1472"
+        />
+        <line
+          stroke="currentColor"
+          strokeLinecap="round"
+          strokeWidth="16"
+          x1="264.872"
+          x2="95.1665"
+          y1="264.853"
+          y2="95.1472"
+        />
+        <circle
+          cx="180"
+          cy="180"
+          fill="none"
+          r="172"
+          stroke="currentColor"
+          strokeWidth="16"
+        />
+      </svg>
+    </styled.button>
+  </Styled(styled.div)>
+</styled.div>
+`;

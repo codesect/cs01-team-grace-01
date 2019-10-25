@@ -5,6 +5,7 @@ import { ApolloProvider } from 'react-apollo';
 import { Router } from '@reach/router';
 import { ThemeProvider } from 'styled-components';
 
+import CookieConsent from './components/CookieConsent';
 import GlobalStyles from './components/GlobalStyles';
 import Header from './components/Header';
 import Footer from './components/Footer';
@@ -32,6 +33,7 @@ const Root = () => (
       </Router>
       <Footer />
       <GlobalStyles />
+      <CookieConsent />
     </ApolloProvider>
   </ThemeProvider>
 );
