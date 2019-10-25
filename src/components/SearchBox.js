@@ -15,7 +15,7 @@ export const SearchBox = props => {
       <label>
         Start by searching for a phone number
         <input
-          type="text"
+          type="search"
           placeholder="Type a phone number"
           onChange={e => setQuery(e.target.value)}
           value={query}

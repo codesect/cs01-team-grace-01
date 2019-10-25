@@ -12,9 +12,6 @@ const Hero = styled.div`
   text-align: center;
 `;
 
-const query = query => {
-  console.log(query);
-};
 const Home = () => {
   return (
     <main>

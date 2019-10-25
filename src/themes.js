@@ -6,8 +6,8 @@ const colors = {
   green: '#00b777',
   grey: 'rgba(0, 0, 0, 0.2)',
   lightBlue: '#e6ebef',
-  offWhite: '#f7f9f6',
   lightPurple: '#f2eff7',
+  offWhite: '#f7f9f6',
   purple: '#6d60b0',
   white: '#fff',
 };
