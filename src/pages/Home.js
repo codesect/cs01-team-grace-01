@@ -1,8 +1,8 @@
-import React from "react";
-import styled from "styled-components";
+import React from 'react';
+import styled from 'styled-components';
 
-import { Wrapper } from "../components/GlobalStyles";
-import { SearchBox } from "../components/SearchBox";
+import { Wrapper } from '../components/GlobalStyles';
+import { SearchBox } from '../components/SearchBox';
 
 const Hero = styled.div`
   align-items: center;
@@ -12,7 +12,7 @@ const Hero = styled.div`
   text-align: center;
 `;
 
-const Query = query => {
+const query = query => {
   console.log(query);
 };
 const Home = () => {
@@ -21,7 +21,7 @@ const Home = () => {
       <Hero>
         <Wrapper>
           <h1>Home Page</h1>
-          <SearchBox onSubmit={Query} />
+          <SearchBox onSubmit={console.log} />
         </Wrapper>
       </Hero>
     </main>

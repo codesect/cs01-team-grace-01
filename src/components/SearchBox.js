@@ -1,34 +1,31 @@
-import React, { useState } from "react";
-import styled from "styled-components";
+import React, { useState } from 'react';
 
-import { Wrapper } from "./GlobalStyles";
-
-import PropTypes from "prop-types";
+import PropTypes from 'prop-types';
 
 export const SearchBox = props => {
-  const [query, setQuery] = useState("");
+  const [query, setQuery] = useState('');
   return (
-    <main>
-      <form
-        onSubmit={e => {
-          e.preventDefault();
-          props.onSubmit(query);
-          setQuery("");
-        }}
-      >
-        <label>Start by searching for a phone number</label>
+    <form
+      onSubmit={e => {
+        e.preventDefault();
+        props.onSubmit(query);
+        setQuery('');
+      }}
+    >
+      <label>
+        Start by searching for a phone number
         <input
           type="text"
           placeholder="Type a phone number"
           onChange={e => setQuery(e.target.value)}
           value={query}
         />
-        <button type="submit">Search</button>
-      </form>
-    </main>
+      </label>
+      <button type="submit">Search</button>
+    </form>
   );
 };
 
 SearchBox.prototypes = {
-  onSubmit: PropTypes.func.isRequired
+  onSubmit: PropTypes.func.isRequired,
 };
