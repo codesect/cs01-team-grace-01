@@ -9,15 +9,19 @@ const Hero = styled.div`
   display: flex;
   justify-content: center;
   min-height: calc(100vh - 7.375rem);
+  text-align: center;
 `;
 
+const Query = query => {
+  console.log(query);
+};
 const Home = () => {
   return (
     <main>
       <Hero>
         <Wrapper>
           <h1>Home Page</h1>
-          <SearchBox />
+          <SearchBox onSubmit={Query} />
         </Wrapper>
       </Hero>
     </main>
