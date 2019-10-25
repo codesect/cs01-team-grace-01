@@ -9,7 +9,18 @@ const colors = {
   offWhite: "#f7f9f6",
   lightPurple: "#f2eff7",
   purple: "#6d60b0",
-  white: "#fff"
+  white: "#fff",
+  black: '#202333',
+  blue: '#3db8db',
+  darkBlue: '#186a81',
+  darkGreen: '#00a666',
+  green: '#00b777',
+  grey: 'rgba(0, 0, 0, 0.2)',
+  lightBlue: '#e6ebef',
+  lightPurple: '#f2eff7',
+  offWhite: '#f7f9f6',
+  purple: '#6d60b0',
+  white: '#fff',
 };
 
 export default {
@@ -25,6 +36,7 @@ export default {
   button: colors.blue,
   buttonActive: colors.darkBlue,
   buttonText: colors.white,
+  consentBackground: colors.offWhite,
   header: colors.lightBlue,
   headerText: colors.text,
   input: colors.white,

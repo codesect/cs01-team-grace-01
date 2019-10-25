@@ -24,4 +24,9 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
+# netlify
 built-lambda
+
+# cypress
+cypress/screenshots
+cypress/videos

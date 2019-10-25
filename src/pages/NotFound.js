@@ -8,6 +8,7 @@ const Hero = styled.div`
   display: flex;
   justify-content: center;
   min-height: calc(100vh - 7.375rem);
+  text-align: center;
 `;
 
 const NotFound = () => {
