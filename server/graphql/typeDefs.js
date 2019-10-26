@@ -32,6 +32,7 @@ module.exports = gql`
   }
 
   type Query {
+    getLatestRatings(max: Int): [Rating]
     getRatings: PhoneNumber
   }
 `;
