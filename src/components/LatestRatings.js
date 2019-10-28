@@ -1,8 +1,5 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import styled from 'styled-components';
-
-import { Wrapper } from '../components/GlobalStyles';
-import { SearchBox } from '../components/SearchBox';
 
 import { gql } from 'apollo-boost';
 import { Query } from 'react-apollo';
