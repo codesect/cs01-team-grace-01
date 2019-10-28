@@ -4,6 +4,8 @@ import styled from 'styled-components';
 import { Wrapper } from '../components/GlobalStyles';
 import { SearchBox } from '../components/SearchBox';
 
+import LatestRatings from '../components/LatestRatings';
+
 const Hero = styled.div`
   align-items: center;
   display: flex;
@@ -19,6 +21,7 @@ const Home = () => {
         <Wrapper>
           <h1>Home Page</h1>
           <SearchBox onSubmit={console.log} />
+          <LatestRatings />
         </Wrapper>
       </Hero>
     </main>
