@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<SearchBox /> matches snapshot 1`] = `
+<form
+  onSubmit={[Function]}
+>
+  <label>
+    Start by searching for a phone number
+    <input
+      onChange={[Function]}
+      placeholder="Type a phone number"
+      type="search"
+      value=""
+    />
+  </label>
+  <button
+    type="submit"
+  >
+    Search
+  </button>
+</form>
+`;
