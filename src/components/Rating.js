@@ -20,7 +20,10 @@ export const Rating = ({ rating }) => {
         {rating.author} reported this number as "{rating.callType}"
       </Heading>
       <p>{rating.message}</p>
-      <time style={{ fontSize: '0.75rem' }}>
+      <time
+        dateTime={new Date(rating.createdAt).toISOString}
+        style={{ fontSize: '0.75rem' }}
+      >
         {new Date(parseInt(rating.createdAt)).toLocaleString('en-GB')}
       </time>
     </List>
