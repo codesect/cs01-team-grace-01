@@ -31,10 +31,6 @@ const LatestRatings = () => {
           {data && (
             <>
               <h2 style={{ fontWeight: 300 }}>
-                {data.getLatestRatings.number}
-                &mdash; {data.getLatestRatings.callType}
-              </h2>
-              <h2 style={{ fontWeight: 300 }}>
                 Latest reviews ({data.getLatestRatings.length})
               </h2>
               <ul style={{ listStyle: 'none', margin: '-1rem', padding: 0 }}>
